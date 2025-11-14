@@ -14,7 +14,7 @@ const MONGODB_URI = process.env.MONGODB_URI;
 // Middlewares
 app.use(express.json());
 app.use(cors({
-    origin: 'http://localhost:3000',
+    origin: ['http://localhost:3000', 'https://daianacossta.github.io'],
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
 }));
